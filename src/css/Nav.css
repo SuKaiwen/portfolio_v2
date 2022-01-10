@@ -1,19 +1,20 @@
 ul {
-    padding-left: 40%;
-    padding-right: 20%;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     background-color: transparent;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 40%;
-    padding-top: 20px;
+    position: fixed;
+    top: 0; 
+    padding-top: 50px;
 }
 
 li {
     color: white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
 }
 
 ul a:link, a:visited,  a:hover, a:active {
@@ -32,7 +33,6 @@ ul a:link, a:visited,  a:hover, a:active {
     ul {
         padding-left: 5%;
         padding-right: 5%;
-        width: 90%;
     }
 
     li {
