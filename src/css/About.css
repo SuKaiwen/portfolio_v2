@@ -1,6 +1,5 @@
 .main-container{
     width: 100%;
-    height: 100vh;
     background-color: black;
     padding-top: 5%;
     justify-content: center;
@@ -11,9 +10,10 @@
 }
 
 .sub-container{
-    width: 80%;
-    height: 80vh;
+    width: 90%;
     min-height: 500px;
+    display: flex;
+    flex-direction: row;
 }
 
 .main-card{
@@ -21,22 +21,162 @@
     width: 40%;
 }
 
+.skill-card{
+    width: 60%;
+    height: 100%;
+}
+
+.skill-card .row{
+    height: 100%;
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill-card .row h1{
+    font-size: 90px;
+    line-height: 50%;
+}
+
+.summary-box{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.summary-box p + p {
+    margin-left: 20px;
+}
+
+button{
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
 .main-card .row{
-    height: 50%;
+    height: 100%;
+    width: 70%;
     padding: 30px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-card img{
     object-fit: cover;
 }
 
-.circle-image{
+.main-card .textbox{
+    text-align: left;
+}
+
+.main-card .iconbox{
+    width: 30%;
+    padding: 0 35%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    color: #90EE90;
+    margin-bottom: 50px;
+}
+
+.image{
     width: 250px;
     height: 250px;
-    border-radius: 50%;
 }
 
 .green-color{
-    color: #90EE90;
+    color: #90EE90 !important;
+    border-color: #90EE90 !important;
+}
+
+.left-bar{
+    width: 10%;
+    height: 100%;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.left-bar h1{
+    font-size: 100px;
+}
+
+.main-content{
+    width: 80%;
+}
+
+.tag{
+    border: 1px solid white;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+@media (width < 1600px) {
+    .left-bar h1{
+        font-size: 70px;
+    }
+
+    .skill-card .row h1{
+        font-size: 70px;
+    }
+}
+  
+@media (width < 1024px) {
+    .left-bar h1{
+        font-size: 40px;
+    }
+
+    .skill-card .row h1{
+        font-size: 40px;
+    }
+
+    .sub-container{
+        flex-direction: column;
+    }
+
+    .skill-card{
+        width: 100%;
+    }
+
+    .main-card{
+        width: 100%;
+    }
+
+    .main-card .row{
+        width: 90%;
+        padding: 0 5%;
+    }    
+}
+  
+@media (width < 650px) {
+    .main-card{
+        width: 100%;
+    }
+
+    .main-card .row{
+        width: 90%;
+        padding: 0 5%;
+    }
+
+    .main-card .iconbox{
+        width: 80%;
+        padding: 0 10%;
+    }
+    .left-bar{
+        display: none;
+        width: 0%;
+    }
+
+    .sub-container{
+        width: 100%;
+    }
+
+    .skill-card .row h1{
+        font-size: 30px;
+    }
 }
