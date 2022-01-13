@@ -1,0 +1,73 @@
+.project-container {
+    width: 100%;
+    background-color: #121212;
+    color:white !important;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-container h1 {
+    font-size: 80px;
+}
+
+.green-color {
+    color: #90EE90 !important;
+    border-color: #90EE90 !important;
+}
+
+.projects-grid {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-card {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.projects-image {
+    width: 60%;
+}
+
+.projects-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 0 0 25px;
+}
+
+.projects-info {
+    width: 40%;
+    background-color: #1f1f1f;
+    border-radius: 0 25px 25px 0;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.projects-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.projects-tag {
+    padding: 10px;
+    border: 1px solid white;
+    background-color:#1f1f1f;
+    color: white;
+}
+
+.projects-info .git-button {
+    padding: 15px;
+    background-color:#1f1f1f;
+    border: 1px solid #90EE90;
+    color: #90EE90;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+}

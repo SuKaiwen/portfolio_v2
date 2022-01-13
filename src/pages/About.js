@@ -20,6 +20,7 @@ function About(props) {
                             <i class="fas fa-envelope fa-2x"></i>
                         </div>
                         <div className = "textbox">
+                            <h1>BIOGRAPHY</h1>
                             <p>Hey there! I'm Kevin Su, a 23 year old web developer from Sydney, Australia. During highschool I took interest in subjects that enable my creativity such as art and graphical design and since then, building aesthetic things has grown to be a passion of mine. </p>
                             <p>After dabbling in various engineering topics in my first year of university, I have grown to love web development <span className = "green-color">(both front-end and back-end)</span> and is always hungry to learn new things. I like to code things from scratch and bring life to awesome ideas.</p>
                         </div>
@@ -31,7 +32,8 @@ function About(props) {
                         <div className = "summary-box">
                             <i class="fas fa-graduation-cap fa-3x"></i>
                             <p>BEHons Software Engineering</p>
-                            <p>The University of Sydney 2017-2021</p>
+                            <p>The University of Sydney</p>
+                            <p>2017-2021</p>
                         </div>
                         <h2>Core Skills</h2>
                         <div className = "textbox">
