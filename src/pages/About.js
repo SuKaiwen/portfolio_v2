@@ -20,8 +20,8 @@ function About(props) {
                             <i class="fas fa-envelope fa-2x"></i>
                         </div>
                         <div className = "textbox">
-                            <p>Hey there! I'm Kevin Su, a 23 year old web developer from Sydney, Australia. During highschool I took interest in subjects that enable my creativity such as art and graphical design. </p>
-                            <p>After dabbling in various engineering topics in my first year of university, I have grown to love web development (both front-end and back-end) and is always hungry to learn new things. I like to code things from scratch and bring life to awesome ideas.</p>
+                            <p>Hey there! I'm Kevin Su, a 23 year old web developer from Sydney, Australia. During highschool I took interest in subjects that enable my creativity such as art and graphical design and since then, building aesthetic things has grown to be a passion of mine. </p>
+                            <p>After dabbling in various engineering topics in my first year of university, I have grown to love web development <span className = "green-color">(both front-end and back-end)</span> and is always hungry to learn new things. I like to code things from scratch and bring life to awesome ideas.</p>
                         </div>
                     </div>
                 </div>
@@ -44,6 +44,10 @@ function About(props) {
                             <button className = "tag">Version Control</button>
                             <button className = "tag">Responsive Design</button>
                             <button className = "tag">UI UX to some extent</button>
+                            <button className = "tag">JSON</button>
+                            <button className = "tag">Bootstrap</button>
+                            <button className = "tag">Tailwind CSS</button>
+                            <button className = "tag">Python</button>
                         </div>
                         <h2>I am described as</h2>
                         <div className = "textbox">

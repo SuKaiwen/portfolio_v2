@@ -1,4 +1,4 @@
-ul {
+.nav ul {
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -10,32 +10,32 @@ ul {
     padding-top: 50px;
 }
 
-li {
+.nav li {
     color: white;
     display: flex;
     flex-direction: row;
     margin-left: 15px;
 }
 
-ul a:link, a:visited,  a:hover, a:active {
+.nav ul a:link, a:visited,  a:hover, a:active {
     color: white;
     text-decoration: none;
 }
 
 @media (width < 1024px) {
-    li {
+    .nav li {
         margin-left: 15px;
     }
 }
 
 @media (width < 650px) {
 
-    ul {
+    .nav ul {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    li {
+    .nav li {
         margin-left: 0px;
     }
 }
