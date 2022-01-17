@@ -53,6 +53,7 @@
 .projects-box {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .projects-tag {

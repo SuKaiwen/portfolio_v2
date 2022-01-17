@@ -5,7 +5,7 @@ function Experience(props) {
     return (
         <div className = "exp-container">
             <div className = "row">
-                <h1>Experience</h1>
+                <h1>EXPERIENCE</h1>
             </div>
             <div className = "row">
                 <div className = "container">
@@ -13,7 +13,7 @@ function Experience(props) {
                         <li>
                             <span></span>
                             <div className = "title">
-                                <h2 className = "green-color">ASSOCIATE FRONTEND DEVELOPER</h2>
+                                <h2 className = "green-color">ASSOCIATE FRONT-END DEVELOPER</h2>
                                 <h4>AKQA</h4>
                                 <p>Oct 2021 - Present - Full Time - Sydney, AU</p>
                                 <p>Developed and maintained code for client websites primarily using HTML, CSS, Sass, JavaScript, and jQuery. Performed testing to ensure cross-browser friendliness and mobile responsiveness. Clients includes Bridgestone, Business Australia, Always On Gift Cards, and more...</p>
@@ -23,7 +23,7 @@ function Experience(props) {
                         <li>
                             <span></span>
                             <div className = "title">
-                                <h2 className = "green-color">FRONTEND INTERN</h2>
+                                <h2 className = "green-color">FRONT-END INTERN</h2>
                                 <h4>GPOS</h4>
                                 <p>Dec 2019 - Feb 2020 - 3 Months - Auckland, NZ</p>
                                 <p>Developed templates using React and Ant Design. Refactored the website's code from vanilla HTML into a React Application. Wrote extensive integration and unit tests for the templates. Engaged with Agile Methodologies. Improved presentation skills via presenting the product to the team.</p>

@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/Projects.css';
 
 import weather from '../images/weather.jpg';
+import artica from '../images/artica.jpg';
+import snipsnok from '../images/snipsnok.jpg';
 
 function Projects(props) {
     return (
@@ -13,10 +15,34 @@ function Projects(props) {
             <div className = "projects-grid">
                 <div className = "projects-card">
                     <div className = "projects-image">
+                        <img src = {snipsnok} alt="" />
+                    </div>
+                    <div className = "projects-info">
+                        <p className = "green-color">FEATURED</p>
+                        <h2>SnipSnok</h2>
+                        <p>Developed alongside team members, SnipSnok is an application designed to help struggling content creators in Australia. Users can donate to others, follow others and post/like content they enjoy!</p>
+                        <div className = "projects-box">
+                            <button className="projects-tag">React</button>
+                            <button className="projects-tag">HTML</button>
+                            <button className="projects-tag">CSS</button>
+                            <button className="projects-tag">JS</button>
+                            <button className="projects-tag">Spring</button>
+                            <button className="projects-tag">Axios</button>
+                            <button className="projects-tag">Java</button>
+                            <button className="projects-tag">MySQL</button>
+                            <button className="projects-tag">Hibernate ORM</button>
+                        </div>
+                        <div className = "projects-box">
+                            <button className="git-button">VIEW GITHUB</button>
+                        </div>
+                    </div>
+                </div>
+                <div className = "projects-card">
+                    <div className = "projects-image">
                         <img src = {weather} alt="" />
                     </div>
                     <div className = "projects-info">
-                        <p className = "green-color">Featured</p>
+                        <p className = "green-color">FEATURED</p>
                         <h2>Weather Application</h2>
                         <p>Developed a weather application that fetches from OpenWeatherAPI to display the weather and forecast of various cities across the world.</p>
                         <div className = "projects-box">
@@ -27,7 +53,27 @@ function Projects(props) {
                             <button className="projects-tag">JS</button>
                         </div>
                         <div className = "projects-box">
-                            <button className="git-button">VIEW PROJECT</button>
+                            <button className="git-button">VIEW GITHUB</button>
+                        </div>
+                    </div>
+                </div>
+                <div className = "projects-card">
+                    <div className = "projects-image">
+                        <img src = {artica} alt="" />
+                    </div>
+                    <div className = "projects-info">
+                        <p className = "green-color">FEATURED</p>
+                        <h2>Artica Furniture</h2>
+                        <p>Artica is an interior modelling and furniture design website. It features multiple pages with a cart functionality. Users are able to browse items and add multiple items to cart.</p>
+                        <div className = "projects-box">
+                            <button className="projects-tag">React</button>
+                            <button className="projects-tag">HTML</button>
+                            <button className="projects-tag">CSS</button>
+                            <button className="projects-tag">JS</button>
+                            <button className="projects-tag">React Router</button>
+                        </div>
+                        <div className = "projects-box">
+                            <button className="git-button">VIEW GITHUB</button>
                         </div>
                     </div>
                 </div>

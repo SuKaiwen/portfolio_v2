@@ -92,7 +92,7 @@
     border-color: #90EE90 !important;
 }
 
-@media (width < 1024px) {
+@media (width < 1400px) {
     .exp-container{
         flex-direction: column;
     }

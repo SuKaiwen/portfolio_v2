@@ -14,7 +14,7 @@ function LandingPage(props) {
                         <img src = {statue} alt="" />
                     </div>
                     <div className = "col">
-                        <h1>Hey I'm <span className="green-color">Kevin Su</span>, a front-end web developer from <span className="green-color">Sydney, Australia</span></h1>
+                        <h1>Hey there! I'm <span className="green-color">Kevin Su</span>, a front-end web developer from <span className="green-color">Sydney, Australia</span></h1>
                     </div>
                 </div>
                 <div className="bot-container">
