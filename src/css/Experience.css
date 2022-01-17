@@ -10,9 +10,7 @@
 }
 
 .exp-container .container {
-    width: 65%;
-    padding: 3%;
-    padding-right: 30%;
+    width: 40%;
     height: 100%;
 }
 
@@ -24,17 +22,27 @@
 }
 
 .exp-container .row{
-    width: 55%;
+    width: 75%;
+    display: flex;
 }
 
 .exp-container .row:first-child{
-    width: 45%;
-    text-align: right;
+    width: 25%;
     align-items: top;
+    writing-mode: vertical-rl;
+    text-align: center;
 }
 
 .exp-container .row:first-child h1{
-    font-size: 50px;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+.exp-container .row .text{
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .container ul:before {
@@ -47,7 +55,7 @@
 }
 
 .container ul li {
-    margin: 120px 60px;
+    margin: 100px 0px 100px 60px;
     position: relative;
 }
 
@@ -84,7 +92,12 @@
     flex-direction: column;
     background-color: #121212;
     padding: 22px;
-    border-radius: 20px;
+    border-radius: 8px;
+}
+
+.exp-container p{
+    margin-top: 2px;
+    color: gray;
 }
 
 .green-color{
@@ -92,9 +105,9 @@
     border-color: #90EE90 !important;
 }
 
-@media (width < 1400px) {
+@media (width < 1600px) {
     .exp-container{
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .exp-container .row{
@@ -102,19 +115,74 @@
     }
     
     .exp-container .row:first-child{
-        width: 100%;
-        text-align: center;
+        width: 12%;
     }
     
     .exp-container .row:first-child h1{
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .exp-container .container {
         width: 80%;
-        padding: 3%;
-        padding-left: 15%;
-        padding-right: 5%;
         height: 100%;
+    }
+}
+
+@media (width < 1024px) {
+    .exp-container .row:first-child h1{
+        font-size: 40px;
+        line-height: 0;
+    }
+
+    .exp-container .row:first-child{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .exp-container .row{
+        flex-direction: column-reverse;
+    }
+
+    .exp-container .row .text{
+        width: 80%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container ul {
+        width: 100%;
+    }
+}
+
+@media (width < 650px) {
+    .exp-container .row:first-child{
+        display: none;
+    }
+
+    .exp-container .row{
+        width: 100%;
+    }
+
+    .container ul li span{
+        display: none;
+    }
+    
+    .container ul li span:before, .container ul li span:after {
+        display: none;
+    }
+
+    .container ul:before {
+        display: none;
+    }
+
+    .exp-container .container{
+        width: 100%;
+    }
+
+    .container ul li {
+        margin: 0;
+        position: relative;
     }
 }

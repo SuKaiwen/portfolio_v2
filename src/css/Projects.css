@@ -72,3 +72,9 @@
     margin-top: 20px;
     font-weight: bold;
 }
+
+@media (width < 650px) {
+    .project-container h1 {
+        font-size: 40px;
+    }
+}

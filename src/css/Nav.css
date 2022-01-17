@@ -27,13 +27,16 @@
     .nav li {
         margin-left: 15px;
     }
+
+    .nav a {
+        font-size: 10px;
+    }
 }
 
 @media (width < 650px) {
 
     .nav ul {
         padding-left: 5%;
-        padding-right: 5%;
     }
 
     .nav li {
