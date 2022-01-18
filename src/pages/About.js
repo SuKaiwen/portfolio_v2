@@ -17,7 +17,7 @@ function About(props) {
             </div>
             <div className = "main-container-2">
                 <div className = "left-bar">
-                    <h1>ABOUT <span className = "green-color">ME</span></h1>
+                    <h1>ABOUT ME</h1>
                 </div>
                 <div className = "sub-container">
                     <div className = "main-card">
@@ -38,8 +38,10 @@ function About(props) {
                                 <li> <i class="fab fa-java fa-3x"></i><p>Java</p></li>
                                 <li><i class="fab fa-python fa-3x"></i><p>Python</p></li>
                                 <li><i class="fab fa-github-square fa-3x"></i><p>Git Version Control</p></li>
-                                <li><i class="fas fa-pen-fancy fa-3x"></i><p>UI UX</p></li>
+                                <li><i class="fas fa-pen-fancy fa-3x"></i><p>Responsive Design</p></li>
                                 <li><i class="fas fa-code fa-3x"></i><p>C++</p></li>
+                                <li><i class="far fa-window-restore fa-3x"></i><p>API/RESTful</p></li>
+                                <li><i class="fab fa-stack-overflow fa-3x"></i><p>"Problem Solving Skills"</p></li>
                             </ul>
                             <h2>Learn more about me</h2>
                             <div className = "textbox">

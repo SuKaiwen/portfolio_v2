@@ -12,6 +12,7 @@
 .exp-container .container {
     width: 40%;
     height: 100%;
+    margin-bottom: 100px;
 }
 
 .container ul {
@@ -87,7 +88,7 @@
     top: 100%;
 }
 
-.title{
+.exp-container .title{
     display: flex;
     flex-direction: column;
     background-color: #121212;
@@ -103,6 +104,16 @@
 .green-color{
     color: #90EE90 !important;
     border-color: #90EE90 !important;
+}
+
+@media (width < 2100px) {
+    .exp-container .row:first-child{
+        width: 18%;
+    }
+
+    .exp-container .row {
+        width: 82%;
+    }
 }
 
 @media (width < 1600px) {
