@@ -12,14 +12,14 @@
 }
 
 .nav li {
-    color: white;
+    color: gray;
     display: flex;
     flex-direction: row;
     margin-left: 15px;
 }
 
 .nav ul a:link, a:visited,  a:hover, a:active {
-    color: white;
+    color: gray;
     text-decoration: none;
 }
 

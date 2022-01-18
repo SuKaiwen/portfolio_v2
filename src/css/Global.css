@@ -14,6 +14,7 @@
 
 .side-bar h1{
     font-size: 100px;
+    font-weight: 400;
 }
 
 .content-container{
@@ -31,3 +32,61 @@
 .content-container .content-3 {
     width: 65%;
 }
+
+.content-container .text-box {
+    width: 25%;
+}
+
+@media (width < 2100px){
+    .side-bar{
+        width: 18%;
+    }
+
+    .content-container{
+        width: 82%;
+    }
+
+    .content-container .content-3 {
+        width: 75%;
+    }
+}
+
+@media (width < 1600px){
+    .side-bar{
+        width: 12%;
+    }
+
+    .side-bar h1{
+        font-size: 70px;
+    }
+
+    .content-container{
+        width: 88%;
+    }
+
+    .content-container .content-3 {
+        width: 95%;
+    }
+}
+
+@media (width < 1024px){
+    .side-bar h1{
+        font-size: 40px;
+    }
+}
+
+@media (width < 650px) {
+    .side-bar{
+        display: none;
+    }
+
+    .content-container{
+        width: 100%;
+    }
+
+    .content-container .content-3 {
+        width: 90%;
+        margin: 0 5%;
+    }
+}
+

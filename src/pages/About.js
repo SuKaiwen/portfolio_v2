@@ -41,7 +41,7 @@ function About(props) {
                                 <li><i class="fas fa-pen-fancy fa-3x"></i><p>Responsive Design</p></li>
                                 <li><i class="fas fa-code fa-3x"></i><p>C++</p></li>
                                 <li><i class="far fa-window-restore fa-3x"></i><p>API/RESTful</p></li>
-                                <li><i class="fab fa-stack-overflow fa-3x"></i><p>"Problem Solving Skills"</p></li>
+                                <li><i class="fab fa-stack-overflow fa-3x"></i><p>"Problem Solve"</p></li>
                             </ul>
                             <h2>Learn more about me</h2>
                             <div className = "textbox">

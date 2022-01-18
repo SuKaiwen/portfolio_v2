@@ -337,4 +337,9 @@ h5, h4, h3, h2, h1{
     .main-container-2 .header .text{
         width: 100%;
     }
+
+    .skill-card .row {
+        width: 90%;
+        padding: 5%;
+    }
 }
