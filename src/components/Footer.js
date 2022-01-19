@@ -9,7 +9,7 @@ function Footer(props) {
                 <p>Thank you for making it all the way to the end! I am currently open to new oppurtunities. Feel free to contact me and I will get back to you!</p>
             </div>
             <div className = "footer-info-box">
-                <button className = "contact-button green-color">Come Say Hello</button>
+                <a href="mailto:kevinsu@outlook.co.nz" target="_blank" ><button className = "contact-button green-color">Come Say Hello</button></a>
             </div>
         </div>
     );

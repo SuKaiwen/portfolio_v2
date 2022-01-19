@@ -34,7 +34,7 @@ function Projects(props) {
                                         {project.tags.map((tag) => (<button className="projects-tag">{tag}</button>))}
                                     </div>
                                     <div className = "projects-box">
-                                        <a href = {project.github}><button className="git-button">VIEW GITHUB</button></a>
+                                        <a href = {project.github} target="_blank" ><button className="git-button">VIEW GITHUB</button></a>
                                     </div>
                                 </div>
                             </div>

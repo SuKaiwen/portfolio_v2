@@ -45,7 +45,7 @@ function About(props) {
                             </ul>
                             <h2>Learn more about me</h2>
                             <div className = "textbox">
-                                <button className = "tag"><i class="fas fa-arrow-down"></i> Download Resume</button>
+                                <button className = "tag"><a href="KevinSu.pdf" target="_blank"><i class="fas fa-arrow-down"></i> Download Resume</a></button>
                             </div>
                         </div>
                     </div>
@@ -61,9 +61,9 @@ function About(props) {
                                 <p>2017-2021</p>
                             </div>
                             <div className = "iconbox">
-                                <i class="fab fa-github fa-2x"></i>
-                                <i class="fab fa-linkedin fa-2x"></i> 
-                                <i class="fas fa-envelope fa-2x"></i>
+                                <a href="https://github.com/SuKaiwen" target="_blank" ><i class="fab fa-github fa-2x"></i></a>
+                                <a href="https://www.linkedin.com/in/kevin-su-618163191/" target="_blank" ><i class="fab fa-linkedin fa-2x"></i> </a>
+                                <a href="mailto:kevinsu@outlook.co.nz" target="_blank" ><i class="fas fa-envelope fa-2x"></i></a>
                             </div>
                             <div className = "textbox">
                                 <h1>Background</h1>
