@@ -23,6 +23,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .projects-card {
@@ -40,6 +41,8 @@
     flex-direction: column;
     text-align: left;
     border-radius: 6px;
+    position: relative;
+    justify-content: space-between;
 }
 
 .projects-info p {

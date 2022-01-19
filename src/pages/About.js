@@ -6,7 +6,7 @@ import mountain from '../images/mountain.jpg';
 
 function About(props) {
     return (
-        <div className = "main-container">
+        <div className = "main-container" id = "about">
             <div className = "main-container-2">
                 <div className = "header">
                     <h1>About Me</h1>

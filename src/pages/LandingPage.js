@@ -4,7 +4,7 @@ import statue from '../images/statue.jpg';
 
 function LandingPage(props) {
     return (
-        <div>
+        <div id = "landing">
             <div className="container">
                 <div className="right-sidebar">
                     <h4>Contact me on - - - <i class="fab fa-github"></i> <i class="fab fa-linkedin"></i> <i class="fas fa-envelope"></i></h4>

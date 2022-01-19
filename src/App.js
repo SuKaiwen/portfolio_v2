@@ -3,6 +3,7 @@ import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
+import Footer from './components/Footer';
 
 import React, {useEffect} from 'react';
 
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Footer />
     </>
   );
 }
