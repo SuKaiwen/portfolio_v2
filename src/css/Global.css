@@ -54,6 +54,10 @@ a {
     border-color: #90EE90 !important;
 }
 
+.gray-color{
+    color: #bdbdbd !important;
+}
+
 @media (width < 2100px){
     .side-bar{
         width: 18%;

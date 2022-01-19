@@ -91,7 +91,7 @@
 .exp-container .title{
     display: flex;
     flex-direction: column;
-    background-color: #121212;
+    background-color: #1f1f1f;
     padding: 22px;
     border-radius: 8px;
 }
@@ -99,6 +99,30 @@
 .exp-container p{
     margin-top: 2px;
     color: gray;
+}
+
+.exp-container .title .info-box{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.exp-container .title .info-box p{
+    line-height: 0.8;
+    color: white;
+    font-weight: 500;
+}
+
+.title ul:before {
+    display: none;
+}
+
+.title ul li {
+    margin: 0 0 0 20px;
+    color: gray;
+    list-style:disc;
+    font-size: 14px;
 }
 
 @media (width < 2100px) {

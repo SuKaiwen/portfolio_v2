@@ -16,7 +16,7 @@ function Projects(props) {
             <div className = "content-container">
                 <div className = "text-box">
                     <h1>Projects</h1>
-                    <p>Building web projects is a keen interest of mine. I love working with front-end libraries like React. I have a strong focus on <span className = "green-color">aestethics and responsive design</span> while also giving attention to <span className = "green-color">code reusability and efficiency.</span></p>
+                    <p>Building web projects is a keen interest of mine. I love working with front end libraries like React. I have a strong focus on <span className = "green-color">aestethics and responsive design</span> while also giving attention to <span className = "green-color">code reusability and efficiency.</span></p>
                 </div>
                 <div className = "content-3">
                     <div className = "projects-grid">

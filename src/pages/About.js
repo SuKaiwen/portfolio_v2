@@ -53,7 +53,7 @@ function About(props) {
                         <div className= "row">
                             <img className = "image" src={me} alt = "" />
                             <h1>Kevin Su</h1>
-                            <h4>Front-End Developer | Software Engineer</h4>
+                            <p>Front End Developer | Software Engineer</p>
                             <div className = "summary-box">
                                 <i class="fas fa-graduation-cap fa-3x"></i>
                                 <p>BEHons Software Engineering</p>
@@ -68,7 +68,7 @@ function About(props) {
                             <div className = "textbox">
                                 <h1>Background</h1>
                                 <p>During highschool I took interest in subjects that enable my creativity such as art and graphical design and since then, building aesthetic things has grown to be a passion of mine. </p>
-                                <p>After dabbling in various engineering topics in my first year of university, I have grown to love web development (both front-end and back-end) and is always hungry to learn new things. I like to code things from scratch and bring life to awesome ideas.</p>
+                                <p>After dabbling in various engineering topics in my first year of university, I have grown to love web development (both front end and back end) and is always hungry to learn new things. I like to code things from scratch and bring life to awesome ideas.</p>
                             </div>
                         </div>
                         
