@@ -7,6 +7,8 @@ import snipsnok from '../images/snipsnok.jpg';
 
 import projectInfo from '../components/ProjectInfo';
 
+import mainProjects from '../data/MainProjectsInfo';
+
 function Projects(props) {
 
     const [projects, setProjects] = useState(projectInfo);
@@ -49,14 +51,39 @@ function Projects(props) {
                     <h1>Projects</h1>
                     <p>Building web projects is a keen interest of mine. I love working with front end libraries like React. I have a strong focus on <span className = "green-color">aestethics and responsive design</span> while also giving attention to <span className = "green-color">code reusability and efficiency.</span></p>
                 </div>
-                <select onChange={handleChange} value={filter}>
-                    <option value = "All">All Projects</option>
-                    <option value = "Featured">Featured</option>
-                    <option value = "React">React</option>
-                    <option value = "Next">Next JS</option>
-                    <option value = "API">API</option>
-                </select>
                 <div className = "content-3">
+                    <div className = "projects-grid">
+                        {mainProjects.map(project => (
+                            <div className = "projects-main-card">
+                                <div className = "image-panel">
+                                    <img src = {project.image} alt = "" />
+                                </div>
+                                <div className = "info-panel">
+                                    <div className = "title">
+                                        <h2>{project.name}</h2>
+                                        {project.featured &&
+                                            <p className = "green-color">FEATURED</p>
+                                        }
+                                    </div>
+                                    <p>{project.description}</p>
+                                    <div className = "projects-box">
+                                        {project.tags.map((tag) => (<button className="projects-tag">{tag}</button>))}
+                                    </div>
+                                    <div className = "projects-box">
+                                        <a href = {project.github} target="_blank" ><button className="git-button">VIEW GITHUB</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    
+                    <select onChange={handleChange} value={filter}>
+                        <option value = "All">All Projects</option>
+                        <option value = "Featured">Featured</option>
+                        <option value = "React">React</option>
+                        <option value = "Next">Next JS</option>
+                        <option value = "API">API</option>
+                    </select>
                     <div className = "projects-grid">
                         {filteredProjects.map((project) => (
                             <div className = "projects-card">

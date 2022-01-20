@@ -34,6 +34,33 @@
     margin-right: 2%;
 }
 
+.projects-main-card {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    background-color: #1f1f1f;
+    margin-bottom: 2%;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 400px;
+}
+
+.projects-main-card .image-panel {
+    width: 60%;
+}
+
+.projects-main-card .image-panel img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.projects-main-card .info-panel {
+    width: 40%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
 .projects-info {
     width: 100%;
     background-color: #1f1f1f;
@@ -46,11 +73,11 @@
     justify-content: space-between;
 }
 
-.projects-info p {
+.project-container p {
     color: gray;
 }
 
-.projects-info .title{
+.projects-grid .title{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -72,7 +99,7 @@
     font-size: 12px;
 }
 
-.projects-info .git-button {
+.git-button {
     padding: 15px;
     background-color:#1f1f1f;
     border: 1px solid #90EE90;
@@ -94,9 +121,28 @@
         margin-bottom: 1%;
         margin-right: 1%;
     }
+
+    .projects-main-card {
+        width: 100%;
+        height: auto;
+    }
 }
 
 @media (width < 750px) {
+
+    .projects-main-card {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .projects-main-card .image-panel {
+        width: 100%;
+    }
+
+    .projects-main-card .info-panel {
+        width: 100%;
+    }
+
     .project-container h1 {
         font-size: 40px;
     }
@@ -108,5 +154,9 @@
 
     .project-container select{
         margin-left: 5%;
+    }
+
+    .projects-main-card {
+        width: 100%;
     }
 }
