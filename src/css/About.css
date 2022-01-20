@@ -170,11 +170,6 @@ h5, h4, h3, h2, h1{
     height: 250px;
 }
 
-.green-color{
-    color: #90EE90 !important;
-    border-color: #90EE90 !important;
-}
-
 .left-bar{
     width: 25%;
     height: 100%;
@@ -221,7 +216,7 @@ h5, h4, h3, h2, h1{
     }
 
     .main-card{
-        margin-top: -250px;
+        margin-top: -200px;
     }
 }
 
