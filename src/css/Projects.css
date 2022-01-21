@@ -115,6 +115,19 @@
     margin-top: 100px;
 }
 
+@media (width < 1600px) {
+    .projects-main-card {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (width < 1200px) {
+    .projects-main-card {
+        width: 90%;
+    }  
+}
+
 @media (width < 1024px){
     .projects-card {
         width:47%;
@@ -124,7 +137,6 @@
 
     .projects-main-card {
         width: 100%;
-        height: auto;
     }
 }
 
