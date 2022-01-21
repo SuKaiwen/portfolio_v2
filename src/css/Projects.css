@@ -40,19 +40,19 @@
     flex-direction: row;
     background-color: #1f1f1f;
     margin-bottom: 2%;
-    border-radius: 6px;
     overflow: hidden;
     height: 400px;
 }
 
 .projects-main-card .image-panel {
-    width: 60%;
+    width: 100%;
 }
 
 .projects-main-card .image-panel img {
     object-fit: cover;
     height: 100%;
     width: 100%;
+    object-position: top left;
 }
 
 .projects-main-card .info-panel {
@@ -115,17 +115,75 @@
     margin-top: 100px;
 }
 
+.project-banner {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+}
+
+.project-banner-bot {
+    width: 97%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 200px;
+}
+
+.project-banner .project-name {
+    width: 50%;
+}
+
+.project-banner .project-name h2{
+    line-height: 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.project-banner .project-tags {
+    width: 25%;
+}
+
+.project-banner .project-tags p{
+    line-height: 0.5;
+}
+
+.project-banner .project-desc {
+    width: 25%;
+}
+.project-banner-bot .small-image{
+    width: 150px;
+    border-radius: 4px;
+    margin-right: 1%;
+    height: 80px;
+}
+
+.project-banner-bot .small-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+}
+
 @media (width < 1600px) {
-    .projects-main-card {
-        width: 70%;
-        height: auto;
+    .project-banner{
+        width: 85%;
     }
+
+    .projects-main-card {
+        width: 85%;
+    }  
 }
 
 @media (width < 1200px) {
     .projects-main-card {
-        width: 90%;
-    }  
+        width: 100%;
+    } 
+    
+    .project-banner{
+        width: 100%;
+    }
 }
 
 @media (width < 1024px){
@@ -141,6 +199,25 @@
 }
 
 @media (width < 750px) {
+
+    .project-banner-bot {
+        width: 100%;
+    }
+
+    .project-banner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-banner .project-tags, .project-banner .project-desc, .project-banner .project-name {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .project-banner .project-tags p {
+        display: inline;
+        margin-right: 10px;
+    }
 
     .projects-main-card {
         flex-direction: column;
@@ -170,5 +247,6 @@
 
     .projects-main-card {
         width: 100%;
+        height: auto;
     }
 }

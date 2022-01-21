@@ -229,6 +229,10 @@ h5, h4, h3, h2, h1{
         font-size: 70px;
     }
 
+    .skill-card .row{
+        width: 50%;
+    }
+
     .skill-card .row h1{
         font-size: 40px;
     }
@@ -269,6 +273,10 @@ h5, h4, h3, h2, h1{
 
     .skill-card{
         width: 100%;
+    }
+
+    .skill-card .row{
+        width: 65%;
     }
 
     .main-card{

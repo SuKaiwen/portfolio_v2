@@ -51,32 +51,44 @@ function Projects(props) {
                     <h1>Projects</h1>
                     <p>Building web projects is a keen interest of mine. I love working with front end libraries like React. I have a strong focus on <span className = "green-color">aestethics and responsive design</span> while also giving attention to <span className = "green-color">code reusability and efficiency.</span></p>
                 </div>
+                <hr />
                 <div className = "content-3">
                     <div className = "projects-grid">
                         {mainProjects.map(project => (
-                            <div className = "projects-main-card">
-                                <div className = "image-panel">
-                                    <img src = {project.image} alt = "" />
-                                </div>
-                                <div className = "info-panel">
-                                    <div className = "title">
+                            <>
+                                <div className = "project-banner">
+                                    <div className = "project-name">
                                         <h2>{project.name}</h2>
-                                        {project.featured &&
-                                            <p className = "green-color">FEATURED</p>
-                                        }
+                                        <a href = {project.github}><i class="fab fa-github fa-2x"></i></a>
                                     </div>
-                                    <p>{project.description}</p>
-                                    <div className = "projects-box">
-                                        {project.tags.map((tag) => (<button className="projects-tag">{tag}</button>))}
+                                    <div className = "project-tags">
+                                        {project.tags.map((tag) => (<p>{tag}</p>))}
                                     </div>
-                                    <div className = "projects-box">
-                                        <a href = {project.github} target="_blank" ><button className="git-button">VIEW GITHUB</button></a>
+                                    <div className = "project-desc">
+                                        <p>{project.description}</p>
                                     </div>
                                 </div>
-                            </div>
+                                <div className = "projects-main-card">
+                                    <div className = "image-panel">
+                                        <img src = {project.image} alt = "" />
+                                    </div>
+                                </div>
+                                <div className = "project-banner-bot">
+                                    {project.subImage.map(smallImg => (
+                                        <div className = "small-image">
+                                            <img src = {smallImg} alt = "" />
+                                        </div>
+                                    ))}
+                                </div>
+                            </>
                         ))}
                     </div>
-                    
+                </div>
+                <div className = "text-box">
+                    <h1>Other Projects</h1>
+                </div>
+                <hr/>
+                <div className = "content-3">
                     <select onChange={handleChange} value={filter}>
                         <option value = "All">All Projects</option>
                         <option value = "Featured">Featured</option>
