@@ -12,6 +12,7 @@ function Projects(props) {
 
     const [projects, setProjects] = useState(projectInfo);
     const [filteredProjects, setFilteredProjects] = useState(projectInfo);
+    const [mainPro, setMainPro] = useState(mainProjects);
 
     const [filter, setFilter] = useState("All");
 
@@ -19,8 +20,12 @@ function Projects(props) {
         setFilter(e.target.value);
     }
 
+    function setImage(project, smallImg){
+        mainPro.filter(x => x === project)[0].image = smallImg;
+        setMainPro([...mainPro]);
+    }
+
     useEffect(() => {
-        var filterVal = filter;
         switch(filter){
             case 'All':
                 setFilteredProjects(projects);
@@ -53,7 +58,7 @@ function Projects(props) {
                 <hr />
                 <div className = "content-3">
                     <div className = "projects-grid">
-                        {mainProjects.map(project => (
+                        {mainPro.map(project => (
                             <>
                                 <div className = "project-banner">
                                     <div className = "project-name">
@@ -75,7 +80,7 @@ function Projects(props) {
                                 <div className = "project-banner-bot">
                                     {project.subImage.map(smallImg => (
                                         <div className = "small-image">
-                                            <img src = {smallImg} alt = "" />
+                                            <img onClick={() => setImage(project, smallImg)} src = {smallImg} alt = "" />
                                         </div>
                                     ))}
                                 </div>
