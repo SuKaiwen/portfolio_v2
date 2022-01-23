@@ -26,7 +26,7 @@
 }
 
 .skill-container .icon  {
-    display: block;
+    display: none;
 }
 
 @media (width < 1600px) {
