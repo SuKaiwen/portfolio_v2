@@ -5,8 +5,7 @@ import weather from '../images/weather.jpg';
 import artica from '../images/artica.jpg';
 import snipsnok from '../images/snipsnok.jpg';
 
-import projectInfo from '../components/ProjectInfo';
-
+import projectInfo from '../data/ProjectInfo';
 import mainProjects from '../data/MainProjectsInfo';
 
 function Projects(props) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import experienceInfo from '../components/ExperienceInfo';
+import experienceInfo from '../data/ExperienceInfo';
 import '../css/Experience.css';
 
 function Experience(props) {

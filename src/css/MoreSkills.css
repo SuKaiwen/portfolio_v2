@@ -1,0 +1,80 @@
+.page-container .skill-container {
+    width: 60%;
+    margin:auto;
+    align-items: center;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.skill-container h1 {
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+.page-container .skill-container .skill-showcase {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.page-container .skill-container .skill-showcase .skill-tab {
+    width: 30%;
+}
+
+.skill-tab p {
+    color: gray;
+}
+
+.skill-container .icon  {
+    display: block;
+}
+
+@media (width < 1600px) {
+    .page-container .skill-container {
+        width: 75%;
+        margin:auto;
+        align-items: center;
+        text-align: center;
+        padding: 5% 0;
+    }
+}
+
+
+@media (width < 1024px) {
+    .page-container .skill-container {
+        width: 70%;
+        padding: 5% 0;
+    }
+
+    .page-container .skill-container .skill-showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .page-container .skill-container .skill-showcase .skill-tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    .skill-container .icon {
+        display: none;
+    }
+
+    .skill-container h1 {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (width < 750px) {
+    .page-container .skill-container {
+        width: 90%;
+        padding: 5% 0;
+        text-align: left;
+    }
+
+    .page-container .skill-container .skill-showcase {
+        margin-bottom: 50px;
+    }
+}

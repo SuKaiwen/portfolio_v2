@@ -36,6 +36,13 @@ display: none;
     }
 }
 
+@media screen and (width < 1024px){
+    .topnav {
+        width: 90%;
+        padding: 0 5%;
+    }
+}
+
 @media (width < 650px) {
     .topnav {
         width: 100%;
